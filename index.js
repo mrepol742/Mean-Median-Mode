@@ -23,7 +23,7 @@ let a = [210, 195, 350, 360, 420, 195, 325, 340, 350, 275]
 a.sort((a, b) => a - b)
 
 /* Find Median */
-console.log(`${ a } : ${ a.length }`)
+console.log(`${a} : ${a.length}`)
 
 console.log('Median: ' + (a[Math.floor((a.length - 1) / 2)] + a[a.length / 2]) / 2)
 
@@ -43,11 +43,11 @@ for (i = 0; i < a.length; i++) {
 function mode(arr) {
     return arr.sort((a, b) =>
         arr.filter(v => v === a).length
-            - arr.filter(v => v === b).length
+        - arr.filter(v => v === b).length
     ).pop();
 }
 
 
-console.log(`Mean: ${ sum / a.length} - Sum : ${ sum }, Length: ${ a.length }`)
+console.log(`Mean: ${sum / a.length} - Sum : ${sum}, Length: ${a.length}`)
 
-console.log(`Mode: ${ mode(a) }`)
+console.log(`Mode: ${mode(a)}`)
